@@ -1,0 +1,42 @@
+{
+  "env": {
+    "es6": true,
+    "browser": true,
+    "node": true,
+    "jest": true
+  },
+  "parser": "babel-eslint",
+  "extends": ["airbnb", "prettier", "prettier/react"],
+  "plugins": ["react", "jsx-a11y", "prettier"],
+  "parserOptions": {
+    "ecmaVersion": 9,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true,
+      "experimentalObjectRestSpread": true
+    }
+  },
+  "globals": {
+    "module": false,
+    "require": true
+  },
+  "rules": {
+    "linebreak-style": "off",
+    "react/jsx-filename-extension": "off",
+    "react/jsx-props-no-spreading": "off",
+    "react/forbid-prop-types": "off",
+    "react/destructuring-assignment": "off",
+    "react/forbid-foreign-prop-types": "off",
+    "import/prefer-default-export": "off",
+    "prefer-destructuring": "off",
+    "import/no-extraneous-dependencies": "off",
+    "class-methods-use-this": "off",
+    "jsx-a11y/label-has-for": "off",
+    "no-plusplus": "off",
+    "no-restricted-globals": "off",
+    "import/no-dynamic-require": "off",
+    "no-restricted-syntax": "off",
+    "global-require": "off",
+    "react/boolean-prop-naming": [2, { "rule": "^(is|has|do|aria)[A-Z]([A-Za-z0-9]?)+" }]
+  }
+}
